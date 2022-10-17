@@ -1,21 +1,115 @@
+a {
+  color: #11999E;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  margin:10px 20px;
+}
+a:hover{
+  color:#EAF6F6;
+}
 body {
   margin: 0;
   text-align: center;
   font-family: 'Merriweather', serif;
+  color: #40514E;
 }
 
+.btn {
+  background: #11cdd4;
+  background-image: linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin: 50px auto 10px auto;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+.bottom-container {
+  margin-top: 70px;
+  background-color:#66BFBF;
+  padding: 50px 0 20px;
+
+}
+.copy_right{
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+.cloud1 {
+  position: absolute;
+  right: 300px;
+  top: 40px;
+}
+
+.cloud2 {
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
+}
+
+.first_para{
+  width: 30%;
+  margin: auto;
+}
+hr{
+  border-style: dotted none none none;
+  width: 4%;
+  border-top-width: 6px;
+  color:#EAF6F6;
+  margin: 100px auto;
+}
 h1 {
   margin: 50px auto 0 auto;
   font-size: 5.625rem;
   font-family: 'Sacramento', cursive;
+  color: #66BFBF;
 }
 
-h2{
+h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
+  font-weight: normal;
+  color: #66BFBF;
+  padding-bottom: 10px;
 }
+
 h3 {
   font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+}
+
+.middle-container {
+  margin: 100px 0;
+}
+.my_pic{
+  margin-top: 70px;
+}
+.programming {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+p{
+    line-height: 2;
+}
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+.second_para{
+  width: 40%;
+  margin: 40px auto 60px;
 }
 .top-container {
   background-color: #CDFCF6;
@@ -23,22 +117,9 @@ h3 {
   padding-top: 100px;
 }
 
-.middle-container {
-
-}
-
-.bottom-container {
-
-}
-
-.cloud1 {
-  position: absolute;
-  right: 300px;
-  top: 50px;
-}
-
-.cloud2 {
-  position: absolute;
-  left: 300px;
-  bottom: 300px;
+.web {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+  margin-top: 20px;
 }
