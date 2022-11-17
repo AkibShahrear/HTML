@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div
+      class="card relative flex flex-col justify-center min-h-screen overflow-hidden"
+    >
+      <div
+        class="w-full p-6 m-auto bg-white border-t border-primary rounded shadow-lg shadow-primary lg:max-w-md"
+      >
+        <h1 class="text-3xl text-center uppercase font-bold text-primary">
+          Food Blog
+        </h1>
+        <form class="mt-6">
+          <div>
+            <label for="name" class="block text-sm text-primary">Name</label>
+            <input
+              type="text"
+              class="block w-full px-4 py-2 mt-2 text-primary bg-white border rounded-md focus:border-secondary-100 focus:outline-none focus:ring focus:opacity-40"
+            />
+          </div>
+          <div class="mt-4">
+            <label for="email" class="block text-sm text-primary">Email</label>
+            <input
+              type="email"
+              class="block w-full px-4 py-2 mt-2 text-primary bg-white border rounded-md focus:border-secondary-100 focus:outline-none focus:ring focus:opacity-40"
+            />
+          </div>
+          <div class="mt-4">
+            <label for="password" class="block text-sm text-primary"
+              >Password</label
+            >
+            <input
+              type="password"
+              class="block w-full px-4 py-2 mt-2 text-primary bg-white border rounded-md focus:border-secondary-100 focus:outline-none focus:ring focus:opacity-40"
+            />
+          </div>
+          <div class="mt-4">
+            <label for="password" class="block text-sm text-primary"
+              >Confirm Password</label
+            >
+            <input
+              type="password"
+              class="block w-full px-4 py-2 mt-2 text-primary bg-white border rounded-md focus:border-secondary-100 focus:outline-none focus:ring focus:opacity-40"
+            />
+          </div>
+          <p class="mt-8 text-xs font-light text-center text-gray-700">
+            Already a member?
+            <a href="login.html" class="text-xs text-gray-600 hover:underline"
+              >Log in</a
+            >
+          </p>
+
+          <div class="mt-6">
+            <button
+              class="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-primary rounded-md hover:bg-pink-400 focus:outline-none focus:bg-pink-400"
+            >
+              Sign up
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>post</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="flex items-center justify-between flex-wrap bg-primary p-6">
+      <div class="flex items-center flex-shrink-1 text-white mr-6">
+        <h1 class="font-bold uppercase p-4 border-gray-100">
+          <a href="/" class="font-serif text-5xl hover:text-purple-600"
+            >ミ★ 𝘍𝘰𝘰𝘥 𝘧𝘪𝘳𝘦 ★彡</a
+          >
+        </h1>
+      </div>
+      <div class="block lg:hidden">
+        <button
+          class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
+        >
+          <svg
+            class="fill-current h-3 w-3"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+        <div class="text-sm lg:flex-grow">
+          <a
+            href="index.html"
+            class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+          >
+            Home
+          </a>
+
+          <a
+            href="#responsive-header"
+            class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+          >
+            About
+          </a>
+
+          <a
+            href="create-post.html"
+            class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+          >
+            Create a post
+          </a>
+
+          <a
+            href="#responsive-header"
+            class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
+          >
+            Contact us
+          </a>
+        </div>
+        <div class="pt-4 sm:text">
+          <a
+            class="mr-4 inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-600 hover:bg-white mt-4 lg:mt-0"
+            href="login.html"
+            >Log in</a
+          >
+          <a
+            class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-600 hover:bg-white mt-4 lg:mt-0"
+            href="signup.html"
+            >Sign up</a
+          >
+        </div>
+      </div>
+    </nav>
+    <div class="flex flex-col justify-end">
+      <div class="">
+        <h1 class="mt-4 font-serif font-bold text-3xl">
+          Please share a recipe
+        </h1>
+      </div>
+
+      <div class="post-container mt-4">
+        <textarea
+          class="w-1/2 resize-none bg-transparent border border-solid border-#ccc"
+          rows="5"
+          placeholder="Enter a recipe"
+        ></textarea>
+        <div
+          class="add-links flex mt-2 decoration-0 items-center mr-7 decoration-#626262 text-xs"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+            />
+          </svg>
+          <a href="#"><img src="" alt="" />Images/Videos</a>
+        </div>
+      </div>
+      <div class="mt-4">
+        <button
+          class="mr-4 uppercase font-bold inline-block text-sm px-4 py-2 leading-none border rounded text-black border-primary hover:border-transparent hover:text-teal-600 hover:bg-white mt-4 lg:mt-0"
+        >
+          Post
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
