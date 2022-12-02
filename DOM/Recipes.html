@@ -1,0 +1,294 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipes</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body>
+    <div class="">
+      <nav class="flex items-center justify-between flex-wrap bg-primary p-6">
+        <div class="flex items-center flex-shrink-1 text-white mr-6">
+          <h1 class="font-bold uppercase p-4 border-gray-100">
+            <a href="/" class="font-serif text-3xl hover:text-purple-600"
+              >ミ★ 𝘍𝘰𝘰𝘥 𝘧𝘪𝘳𝘦 ★彡</a
+            >
+          </h1>
+        </div>
+        <div class="block lg:hidden">
+          <button
+            class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
+          >
+            <svg
+              class="fill-current h-3 w-3"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+        </div>
+        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+          <div class="text-sm lg:flex-grow">
+            <a
+              href="index.html"
+              class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+            >
+              Home
+            </a>
+
+            <a
+              href="About.html"
+              class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+            >
+              About
+            </a>
+
+            <a
+              href="create-post.html"
+              class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+            >
+              Create a post
+            </a>
+
+            <a
+              href="Tags.html"
+              class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+            >
+              Tags
+            </a>
+
+            <a
+              href="Recipes.html"
+              class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+            >
+              Recipes
+            </a>
+
+            <a
+              href="#responsive-header"
+              class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
+            >
+              Contact us
+            </a>
+          </div>
+          <div class="pt-4 sm:text">
+            <a
+              class="mr-4 inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-600 hover:bg-white mt-4 lg:mt-0"
+              href="login.html"
+              >Log in</a
+            >
+            <a
+              class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-600 hover:bg-white mt-4 lg:mt-0"
+              href="signup.html"
+              >Sign up</a
+            >
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Recipe Container -->
+    <section class="recipe-container md:flex gap-8 ml-4 mr-4 mt-8 pt-11">
+      <!-- Tags container -->
+      <div class="mt-6 tags-container flex flex-col pb-12 md:pr-32">
+       <h4 class="mb-2 text-2xl weight font-bold">Recipes</h4>
+       <div class="tags-list grid grid-cols-3  md:grid-cols-1">
+         <a class="uppercase transition-colors hover:text-primary" href="heading">Beef(1)</a>
+         <a class="uppercase transition-colors hover:text-primary" href="heading">Breakfast(1)</a>
+         <a class="uppercase transition-colors hover:text-primary" href="heading">Carrots(3)</a>
+         <a class="uppercase transition-colors hover:text-primary" href="heading">Food(4)</a>
+       </div>
+      </div>
+      <!-- end tags container -->
+      <!-- recipes container -->
+      <div class="recipes-list">
+       <div class="">
+         <div class="mt-6 grid md:grid-cols-2 gap-10 lg:grid-cols-3">
+           <!-- cards go here -->
+     <div class="card hover:shadow-lg">
+             <img
+               src="img/stew.png"
+               alt="Stew image"
+               class="w-full h-32 sm:h-48 object-cover"
+             />
+             <div class="m-4">
+               <a href="a"><span class="font-bold">5 Bean Chilli Stew</span></a>
+               <span class="block text-gray-500 text-sm">Racipe by Mario</span>
+             </div>
+             <div class="badge">
+               <svg
+                 class="w-5 inline-block"
+                 xmlns="http://www.w3.org/2000/svg"
+                 fill="none"
+                 viewBox="0 0 24 24"
+                 stroke-width="1.5"
+                 stroke="currentColor"
+                 class="w-6 h-6"
+               >
+                 <path
+                   stroke-linecap="round"
+                   stroke-linejoin="round"
+                   d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                 />
+               </svg>
+ 
+               <span>25 mins</span>
+             </div>
+           </div>
+ 
+           <div class="card hover:shadow-lg">
+             <img
+               src="img/soup.png"
+               alt="Soup image"
+               class="w-full h-32 sm:h-48 object-cover"
+             />
+             <div class="m-4">
+               <a href="a"><span class="font-bold">5 Bean Chilli Soup</span></a>
+               <span class="block text-gray-500 text-sm">Racipe by Mario</span>
+             </div>
+             <div class="badge">
+               <svg
+                 class="w-5 inline-block"
+                 xmlns="http://www.w3.org/2000/svg"
+                 fill="none"
+                 viewBox="0 0 24 24"
+                 stroke-width="1.5"
+                 stroke="currentColor"
+                 class="w-6 h-6"
+               >
+                 <path
+                   stroke-linecap="round"
+                   stroke-linejoin="round"
+                   d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                 />
+               </svg>
+               <span>20 mins</span>
+             </div>
+           </div>
+ 
+           <div class="card hover:shadow-lg">
+             <img
+               src="img/noodles.jpg"
+               alt="noodles image"
+               class="w-full h-32 sm:h-48 object-cover"
+             />
+             <div class="m-4">
+               <a href="a"><span class="font-bold">Ramen noodles</span></a>
+               <span class="block text-gray-500 text-sm">Racipe by Mario</span>
+             </div>
+             <div class="badge">
+               <svg
+                 class="w-5 inline-block"
+                 xmlns="http://www.w3.org/2000/svg"
+                 fill="none"
+                 viewBox="0 0 24 24"
+                 stroke-width="1.5"
+                 stroke="currentColor"
+                 class="w-6 h-6"
+               >
+                 <path
+                   stroke-linecap="round"
+                   stroke-linejoin="round"
+                   d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                 />
+               </svg>
+               <span>15 mins</span>
+             </div>
+           </div>
+         </div>
+         <div class="mt-8 grid md:grid-cols-3 gap-10">
+         <div class="card hover:shadow-lg">
+           <img
+             src="img/sandwich.jpg"
+             alt="sandwich image"
+             class="w-full h-32 sm:h-48 object-cover"
+           />
+           <div class="m-4">
+             <a href="a"><span class="font-bold">Sandwich</span></a>
+             <span class="block text-gray-500 text-sm">Racipe by Mario</span>
+           </div>
+           <div class="badge">
+             <svg
+               class="w-5 inline-block"
+               xmlns="http://www.w3.org/2000/svg"
+               fill="none"
+               viewBox="0 0 24 24"
+               stroke-width="1.5"
+               stroke="currentColor"
+               class="w-6 h-6"
+             >
+               <path
+                 stroke-linecap="round"
+                 stroke-linejoin="round"
+                 d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+               />
+             </svg>
+ 
+             <span>25 mins</span>
+           </div>
+         </div>
+ 
+         <div class="card hover:shadow-lg">
+           <img
+             src="img/Fried_chicken.jpg"
+             alt="Fried Chicken"
+             class="w-full h-32 sm:h-48 object-cover"
+           />
+           <div class="m-4">
+             <a href="a"><span class="font-bold">Fried Chicken</span></a>
+             <span class="block text-gray-500 text-sm">Racipe by Mario</span>
+           </div>
+           <div class="badge">
+             <svg
+               class="w-5 inline-block"
+               xmlns="http://www.w3.org/2000/svg"
+               fill="none"
+               viewBox="0 0 24 24"
+               stroke-width="1.5"
+               stroke="currentColor"
+               class="w-6 h-6"
+             >
+               <path
+                 stroke-linecap="round"
+                 stroke-linejoin="round"
+                 d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+               />
+             </svg>
+             <span>20 mins</span>
+           </div>
+         </div>
+ 
+         <div class="card hover:shadow-lg">
+           <img
+             src="img/tikka.jpg"
+             alt="Chicken tikka masala image"
+             class="w-full h-32 sm:h-48 object-cover"
+           />
+           <div class="m-4">
+             <a href="a"><span class="font-bold">Chicken Tikka</span></a>
+             <span class="block text-gray-500 text-sm">Racipe by Mario</span>
+           </div>
+           <div class="badge">
+             <svg
+               class="w-5 inline-block"
+               xmlns="http://www.w3.org/2000/svg"
+               fill="none"
+               viewBox="0 0 24 24"
+               stroke-width="1.5"
+               stroke="currentColor"
+               class="w-6 h-6"
+             >
+               <path
+                 stroke-linecap="round"
+                 stroke-linejoin="round"
+                 d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+               />
+             </svg>
+             <span>15 mins</span>
+           </div>
+         </div>
+       </div>
+  </body>
+</html>

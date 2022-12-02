@@ -1,0 +1,347 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body class="text-gray-600 font-serif">
+    <nav class="flex items-center justify-between flex-wrap bg-primary p-6">
+      <div class="flex items-center flex-shrink-1 text-white mr-6">
+        <h1 class="font-bold uppercase p-4 border-gray-100">
+          <a href="/" class="font-serif text-3xl hover:text-purple-600"
+            >ミ★ 𝘍𝘰𝘰𝘥 𝘧𝘪𝘳𝘦 ★彡</a
+          >
+        </h1>
+      </div>
+      <div class="block lg:hidden">
+        <button
+          class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
+        >
+          <svg
+            class="fill-current h-3 w-3"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+        <div class="text-sm lg:flex-grow">
+          <a
+            href="index.html"
+            class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+          >
+            Home
+          </a>
+
+          <a
+            href="About.html"
+            class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+          >
+            About
+          </a>
+
+          <a
+            href="create-post.html"
+            class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+          >
+            Create a post
+          </a>
+          <a
+            href="Tags.html"
+            class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+          >
+            Tags
+          </a>
+
+          <a
+            href="Recipes.html"
+            class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+          >
+            Recipes
+          </a>
+
+          <a
+            href="contact.html"
+            class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
+          >
+            Contact us
+          </a>
+        </div>
+
+        <div class="pt-4 sm:text">
+          <a
+            class="mr-4 inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-600 hover:bg-white mt-4 transition ease-out duration-500 lg:mt-0"
+            href="login.html"
+            >Log in</a
+          >
+          <a
+            class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-600 hover:bg-white mt-4 transition ease-out duration-500 lg:mt-0"
+            href="signup.html"
+            >Sign up</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <div class="recipe-page grid lg:grid-cols-2 m-9 items-center">
+      <section class="recipe-hero grid gap-12">
+        <img
+          src="./img/beef-steak.jpg"
+          alt="beef-steak"
+          class="img recipe-hero-img h-72 rounded"
+        />
+      </section>
+      <article>
+        <h2 class="text-2xl font-semibold text-center mb-1">Beef-steak</h2>
+        <p class="text-gray-600">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <!-- recipe icons -->
+        <div
+          class="recipe-icons grid grid-cols-3 gap-4 mx-8 my-0 text-2xl mt-8"
+        >
+          <article class="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 ml-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"
+              />
+            </svg>
+            <i>
+              <h5 class="mb-0 text-sm">prep time</h5>
+              <p class="mb-0 text-sm text-gray-600">30 min.</p>
+            </i>
+          </article>
+          <article>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 ml-4 rounded-full border-solid border-2 border-indigo-600"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            <h5 class="mb-0 text-sm">cook time</h5>
+            <p class="mb-0 text-sm text-gray-600">20 min.</p>
+          </article>
+          <article>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"
+              />
+            </svg>
+            <i class="fas fa-user-friends">
+              <h5 class="mb-0 text-sm">servings</h5>
+              <p class="mb-0 text-sm text-gray-600">6 servings</p>
+            </i>
+          </article>
+        </div>
+
+        <!-- recipe tags -->
+        <div
+          class="recipe-tags recipe-tags text-1xl flex flex-wrap items-center gap-4 font-semibold text-white m-2 mt-6"
+        >
+          <h1 class="text-black">tags:</h1>
+          <a href="" class="rounded bg-purple-800 px-1">beef</a>
+          <a href="" class="rounded bg-purple-800 px-1">Breakfast</a>
+          <a href="" class="rounded bg-purple-800 px-1">Food</a>
+        </div>
+      </article>
+    </div>
+    <main class="page">
+      <div class="recipe-page">
+        <section class="recipe-hero"></section>
+        <section
+          class="recipe-content py-12 px-0 grid gap-x-12 gap-y-8 m-6 lg:grid-cols-2"
+        >
+          <article>
+            <h4 class="text-2xl font-semibold mb-2 text-center">
+              Instructions
+            </h4>
+            <div class="single-ins mb-4">
+              <header class="grid gap-2 items-center">
+                <p class="uppercase font-semibold mb-0 text-indigo-600">
+                  step 1
+                </p>
+                <div class="h-1 bg-gray-300"></div>
+              </header>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
+                cursus sit amet dictum sit amet justo donec.
+              </p>
+            </div>
+
+            <div class="single-ins mb-4">
+              <header class="grid gap-2 items-center">
+                <p class="uppercase font-semibold mb-0 text-indigo-600">
+                  step 2
+                </p>
+                <div class="h-1 bg-gray-300"></div>
+              </header>
+              <p>
+                Adipiscing commodo elit at imperdiet dui accumsan sit amet
+                nulla. Commodo sed egestas egestas fringilla phasellus. Praesent
+                tristique magna sit amet purus. Aenean pharetra magna ac
+                placerat.
+              </p>
+            </div>
+
+            <div class="single-ins mb-4">
+              <header class="grid gap-2 items-center">
+                <p class="uppercase font-semibold mb-0 text-indigo-600">
+                  step 3
+                </p>
+                <div class="h-1 bg-gray-300"></div>
+              </header>
+              <p>
+                Urna neque viverra justo nec ultrices dui sapien eget. Urna
+                porttitor rhoncus dolor purus. Sagittis orci a scelerisque
+                purus. Facilisis magna etiam tempor orci eu lobortis elementum.
+              </p>
+            </div>
+          </article>
+          <article class="second-col gap-y-8">
+            <div>
+              <h4 class="text-2xl font-semibold mb-2 text-center">
+                Ingredients
+              </h4>
+              <p
+                class="single-ingredient border-b-2 border-solid border-gray-300 pb-3 text-gray-700"
+              >
+                1 1/2 cups of milk
+              </p>
+              <p
+                class="single-ingredient border-b-2 border-solid border-gray-300 pb-3 text-gray-700"
+              >
+                1 1/2 litre water
+              </p>
+              <p
+                class="single-ingredient border-b-2 border-solid border-gray-300 pb-3 text-gray-700"
+              >
+                1 1/2 kg beef mutton
+              </p>
+            </div>
+            <div>
+              <h4 class="text-2xl font-semibold mb-2 text-center mt-8">
+                Tools
+              </h4>
+              <p
+                class="tool border-b-2 border-solid border-gray-300 uppercase pb-3 text-indigo-600"
+              >
+                Sharp knife
+              </p>
+              <p
+                class="tool border-b-2 border-solid border-gray-300 uppercase pb-3 text-indigo-600"
+              >
+                Blender machine
+              </p>
+              <p
+                class="tool border-b-2 border-solid border-gray-300 uppercase pb-3 text-indigo-600"
+              >
+                Measuring spoons
+              </p>
+              <p
+                class="tool border-b-2 border-solid border-gray-300 uppercase pb-3 text-indigo-600"
+              >
+                Stove
+              </p>
+              <p
+                class="tool border-b-2 border-solid border-gray-300 uppercase pb-3 text-indigo-600"
+              >
+                Oven
+              </p>
+              <p
+                class="tool border-b-2 border-solid border-gray-300 uppercase pb-3 text-indigo-600"
+              >
+                Large heavy pot
+              </p>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <!-- comments section -->
+    <div class="">
+      <div
+        class="comment border-solid border-2 border-blue-700 m-3 rounded-xl bg-indigo-400"
+      >
+        <h1 class="text-center font-medium">Comment Section</h1>
+      </div>
+      <div class="continer grid gap-2 ml-6">
+        <div class="flex gap-2 m-2 ml-3 mt-3">
+          <h1 class="text font-semibold">Name:</h1>
+          <input
+            type="text"
+            class="border-solid border-b-2 border-gray-500"
+            placeholder="   Enter your name"
+            id="name"
+          />
+        </div>
+
+        <input
+          type="text"
+          class="border-solid border-2 border-gray-500 mt-2 h-16 rounded-lg ml-7 lg:w-1/2"
+          aria-rowcount="5"
+          placeholder="  Enter your comment Here..."
+          id="commnet"
+        />
+        <div class="grid-flow-row ml-7">
+          <button
+            class="border-solid border-2 border-black rounded-lg px-1 bg-indigo-600 hover:bg-purple-600 text-white font-semibold"
+            onclick="add()"
+          >
+            Submit
+          </button>
+          <button
+            class="border-solid border-2 border-black rounded-lg px-2 bg-indigo-600 hover:bg-purple-600 text-white font-semibold"
+            onclick="location.reload()"
+          >
+            Clear
+          </button>
+        </div>
+      </div>
+      <div>
+        <ul class="list">
+          <h1>Akib Says...</h1>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
