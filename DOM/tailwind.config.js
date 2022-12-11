@@ -12,6 +12,15 @@ module.exports = {
     "./Breakfast-page.html",
     "./Carrots.html",
     "./Food.html",
+    "./recipes/beef-steak.html",
+    "./recipes/recipe-script.js",
+    "./recipes/chawmin.html",
+    "./recipes/fried-chicken.html",
+    "./recipes/noodles.html",
+    "./recipes/shawarma.html",
+    "./recipes/soup.html",
+    "./recipes/stew.html",
+    "./recipes/tikka.html",
   ],
   theme: {
     extend: {

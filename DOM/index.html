@@ -3,8 +3,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Food Fire</title>
     <link rel="stylesheet" href="./dist/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="text-gray-600 font-serif">
     <nav class="flex items-center justify-between flex-wrap bg-primary p-6">
@@ -102,26 +103,26 @@
       <section class="recipe-container md:flex gap-8 ml-4 mr-4 mt-8">
         <!-- Tags container -->
         <div class="tags-container flex flex-col pb-12 md:pr-32">
-          <h4 class="mb-2 weight font-bold">Recipes</h4>
+          <h4 class="mb-2 weight font-bold text-2xl">Recipes</h4>
           <div class="tags-list grid grid-cols-3 md:grid-cols-1">
             <a
               class="uppercase transition-colors hover:text-primary"
-              href="heading"
-              >Beef(1)</a
+              href="beef-page.html"
+              >Beef(3)</a
             >
             <a
               class="uppercase transition-colors hover:text-primary"
-              href="heading"
-              >Breakfast(1)</a
+              href="Breakfast-page.html"
+              >Breakfast(3)</a
             >
             <a
               class="uppercase transition-colors hover:text-primary"
-              href="heading"
+              href="Carrots.html"
               >Carrots(3)</a
             >
             <a
               class="uppercase transition-colors hover:text-primary"
-              href="heading"
+              href="Food.html"
               >Food(4)</a
             >
           </div>
@@ -130,7 +131,7 @@
         <!-- recipes container -->
         <div class="recipes-list">
           <div class="">
-            <h4 class="font-bold pb-2 border-b border-gray-200">
+            <h4 class="font-bold pb-2 border-b border-gray-200 text-2xl">
               Latest Recipes
             </h4>
             <div class="mt-8 grid md:grid-cols-2 gap-10 lg:grid-cols-3">
@@ -142,7 +143,7 @@
                   class="w-full h-32 sm:h-48 object-cover"
                 />
                 <div class="m-4">
-                  <a href="a"
+                  <a href="recipes/stew.html"
                     ><span class="font-bold">5 Bean Chilli Stew</span></a
                   >
                   <span class="block text-gray-500 text-sm"
@@ -168,6 +169,122 @@
 
                   <span>25 mins</span>
                 </div>
+                <hr />
+                <!-- Starting of like share portion -->
+                <div class="option grid grid-cols-3 pt-2 pb-2">
+                  <div class="love flex pl-10">
+                    <button
+                      class="flex hover:ease-in duration-300"
+                      id="likebtn"
+                    >
+                      <div class="pt-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          onclick="Toggle2()"
+                          class="like w-7 h-7 hover:fill-red-400"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                          />
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                  <div
+                    class="unlike flex pl-10 border-solid border-l-2 border-gray-400"
+                  >
+                    <button class="flex" id="dislikebtn">
+                      <div class="pt-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          onclick="Toggle3()"
+                          class="w-7 h-7 dislike cursor-pointer hover:fill-blue-600"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M7.5 15h2.25m8.024-9.75c.011.05.028.1.052.148.591 1.2.924 2.55.924 3.977a8.96 8.96 0 01-.999 4.125m.023-8.25c-.076-.365.183-.75.575-.75h.908c.889 0 1.713.518 1.972 1.368.339 1.11.521 2.287.521 3.507 0 1.553-.295 3.036-.831 4.398C20.613 14.547 19.833 15 19 15h-1.053c-.472 0-.745-.556-.5-.96a8.95 8.95 0 00.303-.54m.023-8.25H16.48a4.5 4.5 0 01-1.423-.23l-3.114-1.04a4.5 4.5 0 00-1.423-.23H6.504c-.618 0-1.217.247-1.605.729A11.95 11.95 0 002.25 12c0 .434.023.863.068 1.285C2.427 14.306 3.346 15 4.372 15h3.126c.618 0 .991.724.725 1.282A7.471 7.471 0 007.5 19.5a2.25 2.25 0 002.25 2.25.75.75 0 00.75-.75v-.633c0-.573.11-1.14.322-1.672.304-.76.93-1.33 1.653-1.715a9.04 9.04 0 002.86-2.4c.498-.634 1.226-1.08 2.032-1.08h.384"
+                          />
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                  <div
+                    class="share pl-10 border-solid border-l-2 border-gray-400"
+                  >
+                    <button>
+                      <a
+                        href="https://www.facebook.com/sharer/sharer.php?u=example.org"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-7 h-7 cursor-pointer hover:fill-indigo-600"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+                          />
+                        </svg>
+                      </a>
+                    </button>
+                  </div>
+                </div>
+                <script>
+                  var is1 = 0;
+                  var b1 = document.querySelector(".like");
+                  function Toggle2() {
+                    if (b1.classList.contains("fill-red-400")) {
+                      b1.classList.remove("fill-red-400");
+                      is1 = 0;
+                    } else if (is1 == 0) {
+                      b1.classList.add("fill-red-400");
+                      is1 = 1;
+                    }
+                  }
+                  var dislike1 = document.querySelector(".dislike");
+                  function Toggle3() {
+                    if (dislike1.classList.contains("fill-blue-600")) {
+                      dislike1.classList.remove("fill-blue-600");
+                      is1 = 0;
+                    } else if (is1 == 0) {
+                      dislike1.classList.add("fill-blue-600");
+                      is1 = 1;
+                    }
+                  }
+                </script>
+                <!-- Ending of like share portion -->
+
+                <!-- <script type="text/javascript">
+                  let likebtn = document.querySelector("#likebtn");
+                  let like = document.querySelector(".like");
+                  let dislikebtn = document.querySelector("#dislikebtn");
+                  let input1 = document.querySelector("#input1");
+                  let input2 = document.querySelector("#input2");
+                  likebtn.addEventListener("click", () => {
+                     input1.value = parseInt(input1.value) + 1;
+                     input1.style.color = "#12ff00";
+                  });
+                  dislikebtn.addEventListener("click", () => {
+                    input2.value = parseInt(input2.value) + 1;
+                    input2.style.color = "#ff0000";
+                  });
+                </script> -->
               </div>
 
               <div class="card hover:shadow-lg">
@@ -177,7 +294,7 @@
                   class="w-full h-32 sm:h-48 object-cover"
                 />
                 <div class="m-4">
-                  <a href="a"
+                  <a href="recipes/soup.html"
                     ><span class="font-bold">5 Bean Chilli Soup</span></a
                   >
                   <span class="block text-gray-500 text-sm"
@@ -202,6 +319,106 @@
                   </svg>
                   <span>20 mins</span>
                 </div>
+                <hr />
+                <!-- Starting of like share portion -->
+                <div class="option grid grid-cols-3 pt-2 pb-2">
+                  <div class="love flex pl-10">
+                    <button
+                      class="flex hover:ease-in duration-300"
+                      id="likebtn"
+                    >
+                      <div class="pt-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          onclick="Toggle4()"
+                          class="like1 w-7 h-7 hover:fill-red-400"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                          />
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                  <div
+                    class="unlike flex pl-10 border-solid border-l-2 border-gray-400"
+                  >
+                    <button class="flex" id="dislikebtn">
+                      <div class="pt-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          onclick="Toggle5()"
+                          class="w-7 h-7 dislike1 cursor-pointer hover:fill-blue-600"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M7.5 15h2.25m8.024-9.75c.011.05.028.1.052.148.591 1.2.924 2.55.924 3.977a8.96 8.96 0 01-.999 4.125m.023-8.25c-.076-.365.183-.75.575-.75h.908c.889 0 1.713.518 1.972 1.368.339 1.11.521 2.287.521 3.507 0 1.553-.295 3.036-.831 4.398C20.613 14.547 19.833 15 19 15h-1.053c-.472 0-.745-.556-.5-.96a8.95 8.95 0 00.303-.54m.023-8.25H16.48a4.5 4.5 0 01-1.423-.23l-3.114-1.04a4.5 4.5 0 00-1.423-.23H6.504c-.618 0-1.217.247-1.605.729A11.95 11.95 0 002.25 12c0 .434.023.863.068 1.285C2.427 14.306 3.346 15 4.372 15h3.126c.618 0 .991.724.725 1.282A7.471 7.471 0 007.5 19.5a2.25 2.25 0 002.25 2.25.75.75 0 00.75-.75v-.633c0-.573.11-1.14.322-1.672.304-.76.93-1.33 1.653-1.715a9.04 9.04 0 002.86-2.4c.498-.634 1.226-1.08 2.032-1.08h.384"
+                          />
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                  <div
+                    class="share pl-10 border-solid border-l-2 border-gray-400"
+                  >
+                    <button>
+                      <a
+                        href="https://www.facebook.com/sharer/sharer.php?u=example.org"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-7 h-7 cursor-pointer hover:fill-indigo-600"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+                          />
+                        </svg>
+                      </a>
+                    </button>
+                  </div>
+                </div>
+                <script>
+                  var is2 = 0;
+                  var b2 = document.querySelector(".like1");
+                  function Toggle4() {
+                    if (b2.classList.contains("fill-red-400")) {
+                      b2.classList.remove("fill-red-400");
+                      is2 = 0;
+                    } else if (is2 == 0) {
+                      b2.classList.add("fill-red-400");
+                      is2 = 1;
+                    }
+                  }
+                  var dislike2 = document.querySelector(".dislike1");
+                  function Toggle5() {
+                    if (dislike2.classList.contains("fill-blue-600")) {
+                      dislike2.classList.remove("fill-blue-600");
+                      is2 = 0;
+                    } else if (is2 == 0) {
+                      dislike2.classList.add("fill-blue-600");
+                      is2 = 1;
+                    }
+                  }
+                </script>
+                <!-- Ending of like share portion -->
               </div>
 
               <div class="card hover:shadow-lg">
@@ -211,7 +428,9 @@
                   class="w-full h-32 sm:h-48 object-cover"
                 />
                 <div class="m-4">
-                  <a href="a"><span class="font-bold">Ramen noodles</span></a>
+                  <a href="recipes/noodles.html"
+                    ><span class="font-bold">Ramen noodles</span></a
+                  >
                   <span class="block text-gray-500 text-sm"
                     >Racipe by Mario</span
                   >
@@ -234,9 +453,109 @@
                   </svg>
                   <span>15 mins</span>
                 </div>
+                <hr />
+                <!-- Starting of like share portion -->
+                <div class="option grid grid-cols-3 pt-2 pb-2">
+                  <div class="love flex pl-10">
+                    <button
+                      class="flex hover:ease-in duration-300"
+                      id="likebtn"
+                    >
+                      <div class="pt-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          onclick="Toggle6()"
+                          class="like2 w-7 h-7 hover:fill-red-400"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                          />
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                  <div
+                    class="unlike flex pl-10 border-solid border-l-2 border-gray-400"
+                  >
+                    <button class="flex" id="dislikebtn">
+                      <div class="pt-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          onclick="Toggle7()"
+                          class="w-7 h-7 dislike2 cursor-pointer hover:fill-blue-600"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M7.5 15h2.25m8.024-9.75c.011.05.028.1.052.148.591 1.2.924 2.55.924 3.977a8.96 8.96 0 01-.999 4.125m.023-8.25c-.076-.365.183-.75.575-.75h.908c.889 0 1.713.518 1.972 1.368.339 1.11.521 2.287.521 3.507 0 1.553-.295 3.036-.831 4.398C20.613 14.547 19.833 15 19 15h-1.053c-.472 0-.745-.556-.5-.96a8.95 8.95 0 00.303-.54m.023-8.25H16.48a4.5 4.5 0 01-1.423-.23l-3.114-1.04a4.5 4.5 0 00-1.423-.23H6.504c-.618 0-1.217.247-1.605.729A11.95 11.95 0 002.25 12c0 .434.023.863.068 1.285C2.427 14.306 3.346 15 4.372 15h3.126c.618 0 .991.724.725 1.282A7.471 7.471 0 007.5 19.5a2.25 2.25 0 002.25 2.25.75.75 0 00.75-.75v-.633c0-.573.11-1.14.322-1.672.304-.76.93-1.33 1.653-1.715a9.04 9.04 0 002.86-2.4c.498-.634 1.226-1.08 2.032-1.08h.384"
+                          />
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                  <div
+                    class="share pl-10 border-solid border-l-2 border-gray-400"
+                  >
+                    <button>
+                      <a
+                        href="https://www.facebook.com/sharer/sharer.php?u=example.org"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-7 h-7 cursor-pointer hover:fill-indigo-600"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+                          />
+                        </svg>
+                      </a>
+                    </button>
+                  </div>
+                </div>
+                <script>
+                  var is3 = 0;
+                  var b3 = document.querySelector(".like2");
+                  function Toggle6() {
+                    if (b3.classList.contains("fill-red-400")) {
+                      b3.classList.remove("fill-red-400");
+                      is3 = 0;
+                    } else if (is3 == 0) {
+                      b3.classList.add("fill-red-400");
+                      is3 = 1;
+                    }
+                  }
+                  var dislike3 = document.querySelector(".dislike2");
+                  function Toggle7() {
+                    if (dislike3.classList.contains("fill-blue-600")) {
+                      dislike3.classList.remove("fill-blue-600");
+                      is3 = 0;
+                    } else if (is == 0) {
+                      dislike3.classList.add("fill-blue-600");
+                      is3 = 1;
+                    }
+                  }
+                </script>
+                <!-- Ending of like share portion -->
               </div>
             </div>
-            <div class="mt-8 grid md:grid-cols-3 gap-10">
+            <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-10">
               <div class="card hover:shadow-lg">
                 <img
                   src="img/sandwich.jpg"
@@ -244,7 +563,9 @@
                   class="w-full h-32 sm:h-48 object-cover"
                 />
                 <div class="m-4">
-                  <a href="a"><span class="font-bold">Sandwich</span></a>
+                  <a href="recipes/shawarma.html"
+                    ><span class="font-bold">Sandwich</span></a
+                  >
                   <span class="block text-gray-500 text-sm"
                     >Racipe by Mario</span
                   >
@@ -268,6 +589,106 @@
 
                   <span>25 mins</span>
                 </div>
+                <hr />
+                <!-- Starting of like share portion -->
+                <div class="option grid grid-cols-3 pt-2 pb-2">
+                  <div class="love flex pl-10">
+                    <button
+                      class="flex hover:ease-in duration-300"
+                      id="likebtn"
+                    >
+                      <div class="pt-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          onclick="Toggle8()"
+                          class="like3 w-7 h-7 hover:fill-red-400"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                          />
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                  <div
+                    class="unlike flex pl-10 border-solid border-l-2 border-gray-400"
+                  >
+                    <button class="flex" id="dislikebtn">
+                      <div class="pt-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          onclick="Toggle9()"
+                          class="w-7 h-7 dislike3 cursor-pointer hover:fill-blue-600"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M7.5 15h2.25m8.024-9.75c.011.05.028.1.052.148.591 1.2.924 2.55.924 3.977a8.96 8.96 0 01-.999 4.125m.023-8.25c-.076-.365.183-.75.575-.75h.908c.889 0 1.713.518 1.972 1.368.339 1.11.521 2.287.521 3.507 0 1.553-.295 3.036-.831 4.398C20.613 14.547 19.833 15 19 15h-1.053c-.472 0-.745-.556-.5-.96a8.95 8.95 0 00.303-.54m.023-8.25H16.48a4.5 4.5 0 01-1.423-.23l-3.114-1.04a4.5 4.5 0 00-1.423-.23H6.504c-.618 0-1.217.247-1.605.729A11.95 11.95 0 002.25 12c0 .434.023.863.068 1.285C2.427 14.306 3.346 15 4.372 15h3.126c.618 0 .991.724.725 1.282A7.471 7.471 0 007.5 19.5a2.25 2.25 0 002.25 2.25.75.75 0 00.75-.75v-.633c0-.573.11-1.14.322-1.672.304-.76.93-1.33 1.653-1.715a9.04 9.04 0 002.86-2.4c.498-.634 1.226-1.08 2.032-1.08h.384"
+                          />
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                  <div
+                    class="share pl-10 border-solid border-l-2 border-gray-400"
+                  >
+                    <button>
+                      <a
+                        href="https://www.facebook.com/sharer/sharer.php?u=example.org"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-7 h-7 cursor-pointer hover:fill-indigo-600"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+                          />
+                        </svg>
+                      </a>
+                    </button>
+                  </div>
+                </div>
+                <script>
+                  var is4 = 0;
+                  var b4 = document.querySelector(".like3");
+                  function Toggle8() {
+                    if (b4.classList.contains("fill-red-400")) {
+                      b4.classList.remove("fill-red-400");
+                      is4 = 0;
+                    } else if (is4 == 0) {
+                      b4.classList.add("fill-red-400");
+                      is4 = 1;
+                    }
+                  }
+                  var dislike4 = document.querySelector(".dislike3");
+                  function Toggle9() {
+                    if (dislike4.classList.contains("fill-blue-600")) {
+                      dislike4.classList.remove("fill-blue-600");
+                      is4 = 0;
+                    } else if (is4 == 0) {
+                      dislike4.classList.add("fill-blue-600");
+                      is4 = 1;
+                    }
+                  }
+                </script>
+                <!-- Ending of like share portion -->
               </div>
 
               <div class="card hover:shadow-lg">
@@ -277,7 +698,9 @@
                   class="w-full h-32 sm:h-48 object-cover"
                 />
                 <div class="m-4">
-                  <a href="a"><span class="font-bold">Fried Chicken</span></a>
+                  <a href="recipes/fried-chicken.html"
+                    ><span class="font-bold">Fried Chicken</span></a
+                  >
                   <span class="block text-gray-500 text-sm"
                     >Racipe by Mario</span
                   >
@@ -300,6 +723,106 @@
                   </svg>
                   <span>20 mins</span>
                 </div>
+                <hr />
+                <!-- Starting of like share portion -->
+                <div class="option grid grid-cols-3 pt-2 pb-2">
+                  <div class="love flex pl-10">
+                    <button
+                      class="flex hover:ease-in duration-300"
+                      id="likebtn"
+                    >
+                      <div class="pt-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          onclick="Toggle10()"
+                          class="like4 w-7 h-7 hover:fill-red-400"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                          />
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                  <div
+                    class="unlike flex pl-10 border-solid border-l-2 border-gray-400"
+                  >
+                    <button class="flex" id="dislikebtn">
+                      <div class="pt-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          onclick="Toggle11()"
+                          class="w-7 h-7 dislike4 cursor-pointer hover:fill-blue-600"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M7.5 15h2.25m8.024-9.75c.011.05.028.1.052.148.591 1.2.924 2.55.924 3.977a8.96 8.96 0 01-.999 4.125m.023-8.25c-.076-.365.183-.75.575-.75h.908c.889 0 1.713.518 1.972 1.368.339 1.11.521 2.287.521 3.507 0 1.553-.295 3.036-.831 4.398C20.613 14.547 19.833 15 19 15h-1.053c-.472 0-.745-.556-.5-.96a8.95 8.95 0 00.303-.54m.023-8.25H16.48a4.5 4.5 0 01-1.423-.23l-3.114-1.04a4.5 4.5 0 00-1.423-.23H6.504c-.618 0-1.217.247-1.605.729A11.95 11.95 0 002.25 12c0 .434.023.863.068 1.285C2.427 14.306 3.346 15 4.372 15h3.126c.618 0 .991.724.725 1.282A7.471 7.471 0 007.5 19.5a2.25 2.25 0 002.25 2.25.75.75 0 00.75-.75v-.633c0-.573.11-1.14.322-1.672.304-.76.93-1.33 1.653-1.715a9.04 9.04 0 002.86-2.4c.498-.634 1.226-1.08 2.032-1.08h.384"
+                          />
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                  <div
+                    class="share pl-10 border-solid border-l-2 border-gray-400"
+                  >
+                    <button>
+                      <a
+                        href="https://www.facebook.com/sharer/sharer.php?u=example.org"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-7 h-7 cursor-pointer hover:fill-indigo-600"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+                          />
+                        </svg>
+                      </a>
+                    </button>
+                  </div>
+                </div>
+                <script>
+                  var is5 = 0;
+                  var b5 = document.querySelector(".like4");
+                  function Toggle10() {
+                    if (b5.classList.contains("fill-red-400")) {
+                      b5.classList.remove("fill-red-400");
+                      is5 = 0;
+                    } else if (is5 == 0) {
+                      b5.classList.add("fill-red-400");
+                      is5 = 1;
+                    }
+                  }
+                  var dislike5 = document.querySelector(".dislike4");
+                  function Toggle11() {
+                    if (dislike5.classList.contains("fill-blue-600")) {
+                      dislike5.classList.remove("fill-blue-600");
+                      is5 = 0;
+                    } else if (is == 0) {
+                      dislike5.classList.add("fill-blue-600");
+                      is5 = 1;
+                    }
+                  }
+                </script>
+                <!-- Ending of like share portion -->
               </div>
 
               <div class="card hover:shadow-lg">
@@ -309,7 +832,9 @@
                   class="w-full h-32 sm:h-48 object-cover"
                 />
                 <div class="m-4">
-                  <a href="a"><span class="font-bold">Chicken Tikka</span></a>
+                  <a href="recipes/tikka.html"
+                    ><span class="font-bold">Chicken Tikka</span></a
+                  >
                   <span class="block text-gray-500 text-sm"
                     >Racipe by Mario</span
                   >
@@ -332,17 +857,521 @@
                   </svg>
                   <span>15 mins</span>
                 </div>
+                <hr />
+                <!-- Starting of like share portion -->
+                <div class="option grid grid-cols-3 pt-2 pb-2">
+                  <div class="love flex pl-10">
+                    <button
+                      class="flex hover:ease-in duration-300"
+                      id="likebtn"
+                    >
+                      <div class="pt-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          onclick="Toggle12()"
+                          class="like5 w-7 h-7 hover:fill-red-400"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                          />
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                  <div
+                    class="unlike flex pl-10 border-solid border-l-2 border-gray-400"
+                  >
+                    <button class="flex" id="dislikebtn">
+                      <div class="pt-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          onclick="Toggle13()"
+                          class="w-7 h-7 dislike5 cursor-pointer hover:fill-blue-600"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M7.5 15h2.25m8.024-9.75c.011.05.028.1.052.148.591 1.2.924 2.55.924 3.977a8.96 8.96 0 01-.999 4.125m.023-8.25c-.076-.365.183-.75.575-.75h.908c.889 0 1.713.518 1.972 1.368.339 1.11.521 2.287.521 3.507 0 1.553-.295 3.036-.831 4.398C20.613 14.547 19.833 15 19 15h-1.053c-.472 0-.745-.556-.5-.96a8.95 8.95 0 00.303-.54m.023-8.25H16.48a4.5 4.5 0 01-1.423-.23l-3.114-1.04a4.5 4.5 0 00-1.423-.23H6.504c-.618 0-1.217.247-1.605.729A11.95 11.95 0 002.25 12c0 .434.023.863.068 1.285C2.427 14.306 3.346 15 4.372 15h3.126c.618 0 .991.724.725 1.282A7.471 7.471 0 007.5 19.5a2.25 2.25 0 002.25 2.25.75.75 0 00.75-.75v-.633c0-.573.11-1.14.322-1.672.304-.76.93-1.33 1.653-1.715a9.04 9.04 0 002.86-2.4c.498-.634 1.226-1.08 2.032-1.08h.384"
+                          />
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                  <div
+                    class="share pl-10 border-solid border-l-2 border-gray-400"
+                  >
+                    <button>
+                      <a
+                        href="https://www.facebook.com/sharer/sharer.php?u=example.org"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-7 h-7 cursor-pointer hover:fill-indigo-600"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+                          />
+                        </svg>
+                      </a>
+                    </button>
+                  </div>
+                </div>
+                <script>
+                  var is6 = 0;
+                  var b6 = document.querySelector(".like5");
+                  function Toggle12() {
+                    if (b6.classList.contains("fill-red-400")) {
+                      b6.classList.remove("fill-red-400");
+                      is6 = 0;
+                    } else if (is6 == 0) {
+                      b6.classList.add("fill-red-400");
+                      is6 = 1;
+                    }
+                  }
+                  var dislike6 = document.querySelector(".dislike5");
+                  function Toggle13() {
+                    if (dislike6.classList.contains("fill-blue-600")) {
+                      dislike6.classList.remove("fill-blue-600");
+                      is6 = 0;
+                    } else if (is6 == 0) {
+                      dislike6.classList.add("fill-blue-600");
+                      is6 = 1;
+                    }
+                  }
+                </script>
+                <!-- Ending of like share portion -->
               </div>
             </div>
             <!-- Cards end here -->
 
-            <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">
+            <h4 class="font-bold mt-12 pb-2 border-b border-gray-200 text-2xl">
               Most Popular
             </h4>
             <div class="mt-8">
               <!-- cards go here -->
+              <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="card hover:shadow-lg">
+                  <img
+                    src="img/shawarma.jpg"
+                    alt="shawarma image"
+                    class="w-full h-32 sm:h-48 object-cover"
+                  />
+                  <div class="m-4">
+                    <a href="recipes/shawarma.html"
+                      ><span class="font-bold">Chicken shawarma</span></a
+                    >
+                    <span class="block text-gray-500 text-sm"
+                      >Racipe by Mario</span
+                    >
+                  </div>
+                  <div class="badge">
+                    <svg
+                      class="w-5 inline-block"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+
+                    <span>25 mins</span>
+                  </div>
+                  <hr />
+                  <!-- Starting of like share portion -->
+                  <div class="option grid grid-cols-3 pt-2 pb-2">
+                    <div class="love flex pl-10">
+                      <button
+                        class="flex hover:ease-in duration-300"
+                        id="likebtn"
+                      >
+                        <div class="pt-1">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            onclick="Toggle13()"
+                            class="like6 w-7 h-7 hover:fill-red-400"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                            />
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                    <div
+                      class="unlike flex pl-10 border-solid border-l-2 border-gray-400"
+                    >
+                      <button class="flex" id="dislikebtn">
+                        <div class="pt-1">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            onclick="Toggle14()"
+                            class="w-7 h-7 dislike6 cursor-pointer hover:fill-blue-600"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M7.5 15h2.25m8.024-9.75c.011.05.028.1.052.148.591 1.2.924 2.55.924 3.977a8.96 8.96 0 01-.999 4.125m.023-8.25c-.076-.365.183-.75.575-.75h.908c.889 0 1.713.518 1.972 1.368.339 1.11.521 2.287.521 3.507 0 1.553-.295 3.036-.831 4.398C20.613 14.547 19.833 15 19 15h-1.053c-.472 0-.745-.556-.5-.96a8.95 8.95 0 00.303-.54m.023-8.25H16.48a4.5 4.5 0 01-1.423-.23l-3.114-1.04a4.5 4.5 0 00-1.423-.23H6.504c-.618 0-1.217.247-1.605.729A11.95 11.95 0 002.25 12c0 .434.023.863.068 1.285C2.427 14.306 3.346 15 4.372 15h3.126c.618 0 .991.724.725 1.282A7.471 7.471 0 007.5 19.5a2.25 2.25 0 002.25 2.25.75.75 0 00.75-.75v-.633c0-.573.11-1.14.322-1.672.304-.76.93-1.33 1.653-1.715a9.04 9.04 0 002.86-2.4c.498-.634 1.226-1.08 2.032-1.08h.384"
+                            />
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                    <div
+                      class="share pl-10 border-solid border-l-2 border-gray-400"
+                    >
+                      <button>
+                        <a
+                          href="https://www.facebook.com/sharer/sharer.php?u=example.org"
+                          target="_blank"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-7 h-7 cursor-pointer hover:fill-indigo-600"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+                            />
+                          </svg>
+                        </a>
+                      </button>
+                    </div>
+                  </div>
+                  <script>
+                    var is7 = 0;
+                    var b7 = document.querySelector(".like6");
+                    function Toggle13() {
+                      if (b7.classList.contains("fill-red-400")) {
+                        b7.classList.remove("fill-red-400");
+                        is7 = 0;
+                      } else if (is7 == 0) {
+                        b7.classList.add("fill-red-400");
+                        is7 = 1;
+                      }
+                    }
+                    var dislike7 = document.querySelector(".dislike6");
+                    function Toggle14() {
+                      if (dislike7.classList.contains("fill-blue-600")) {
+                        dislike7.classList.remove("fill-blue-600");
+                        is7 = 0;
+                      } else if (is7 == 0) {
+                        dislike7.classList.add("fill-blue-600");
+                        is7 = 1;
+                      }
+                    }
+                  </script>
+                  <!-- Ending of like share portion -->
+                </div>
+
+                <div class="card hover:shadow-lg">
+                  <img
+                    src="img/beef-steak.jpg"
+                    alt="beef-steak"
+                    class="w-full h-32 sm:h-48 object-cover"
+                  />
+                  <div class="m-4">
+                    <a href="recipes/beef-steak.html"
+                      ><span class="font-bold">Beef-steak</span></a
+                    >
+                    <span class="block text-gray-500 text-sm"
+                      >Racipe by Mario</span
+                    >
+                  </div>
+                  <div class="badge">
+                    <svg
+                      class="w-5 inline-block"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                    <span>20 mins</span>
+                  </div>
+                  <hr />
+                  <!-- Starting of like share portion -->
+                  <div class="option grid grid-cols-3 pt-2 pb-2">
+                    <div class="love flex pl-10">
+                      <button
+                        class="flex hover:ease-in duration-300"
+                        id="likebtn"
+                      >
+                        <div class="pt-1">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            onclick="Toggle15()"
+                            class="like7 w-7 h-7 hover:fill-red-400"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                            />
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                    <div
+                      class="unlike flex pl-10 border-solid border-l-2 border-gray-400"
+                    >
+                      <button class="flex" id="dislikebtn">
+                        <div class="pt-1">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            onclick="Toggle16()"
+                            class="w-7 h-7 dislike7 cursor-pointer hover:fill-blue-600"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M7.5 15h2.25m8.024-9.75c.011.05.028.1.052.148.591 1.2.924 2.55.924 3.977a8.96 8.96 0 01-.999 4.125m.023-8.25c-.076-.365.183-.75.575-.75h.908c.889 0 1.713.518 1.972 1.368.339 1.11.521 2.287.521 3.507 0 1.553-.295 3.036-.831 4.398C20.613 14.547 19.833 15 19 15h-1.053c-.472 0-.745-.556-.5-.96a8.95 8.95 0 00.303-.54m.023-8.25H16.48a4.5 4.5 0 01-1.423-.23l-3.114-1.04a4.5 4.5 0 00-1.423-.23H6.504c-.618 0-1.217.247-1.605.729A11.95 11.95 0 002.25 12c0 .434.023.863.068 1.285C2.427 14.306 3.346 15 4.372 15h3.126c.618 0 .991.724.725 1.282A7.471 7.471 0 007.5 19.5a2.25 2.25 0 002.25 2.25.75.75 0 00.75-.75v-.633c0-.573.11-1.14.322-1.672.304-.76.93-1.33 1.653-1.715a9.04 9.04 0 002.86-2.4c.498-.634 1.226-1.08 2.032-1.08h.384"
+                            />
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                    <div
+                      class="share pl-10 border-solid border-l-2 border-gray-400"
+                    >
+                      <button>
+                        <a
+                          href="https://www.facebook.com/sharer/sharer.php?u=example.org"
+                          target="_blank"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-7 h-7 cursor-pointer hover:fill-indigo-600"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+                            />
+                          </svg>
+                        </a>
+                      </button>
+                    </div>
+                  </div>
+                  <script>
+                    var is8 = 0;
+                    var b8 = document.querySelector(".like7");
+                    function Toggle15() {
+                      if (b8.classList.contains("fill-red-400")) {
+                        b8.classList.remove("fill-red-400");
+                        is8 = 0;
+                      } else if (is8 == 0) {
+                        b8.classList.add("fill-red-400");
+                        is8 = 1;
+                      }
+                    }
+                    var dislike8 = document.querySelector(".dislike7");
+                    function Toggle16() {
+                      if (dislike8.classList.contains("fill-blue-600")) {
+                        dislike8.classList.remove("fill-blue-600");
+                        is8 = 0;
+                      } else if (is8 == 0) {
+                        dislike8.classList.add("fill-blue-600");
+                        is8 = 1;
+                      }
+                    }
+                  </script>
+                  <!-- Ending of like share portion -->
+                </div>
+
+                <div class="card hover:shadow-lg">
+                  <img
+                    src="img/tikka.jpg"
+                    alt="Chicken tikka masala image"
+                    class="w-full h-32 sm:h-48 object-cover"
+                  />
+                  <div class="m-4">
+                    <a href="recipes/tikka.html"
+                      ><span class="font-bold">Chicken Tikka</span></a
+                    >
+                    <span class="block text-gray-500 text-sm"
+                      >Racipe by Mario</span
+                    >
+                  </div>
+                  <div class="badge">
+                    <svg
+                      class="w-5 inline-block"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                    <span>15 mins</span>
+                  </div>
+                  <hr />
+                  <!-- Starting of like share portion -->
+                  <div class="option grid grid-cols-3 pt-2 pb-2">
+                    <div class="love flex pl-10">
+                      <button
+                        class="flex hover:ease-in duration-300"
+                        id="likebtn"
+                      >
+                        <div class="pt-1">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            onclick="Toggle17()"
+                            class="like8 w-7 h-7 hover:fill-red-400"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                            />
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                    <div
+                      class="unlike flex pl-10 border-solid border-l-2 border-gray-400"
+                    >
+                      <button class="flex" id="dislikebtn">
+                        <div class="pt-1">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            onclick="Toggle18()"
+                            class="w-7 h-7 dislike8 cursor-pointer hover:fill-blue-600"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M7.5 15h2.25m8.024-9.75c.011.05.028.1.052.148.591 1.2.924 2.55.924 3.977a8.96 8.96 0 01-.999 4.125m.023-8.25c-.076-.365.183-.75.575-.75h.908c.889 0 1.713.518 1.972 1.368.339 1.11.521 2.287.521 3.507 0 1.553-.295 3.036-.831 4.398C20.613 14.547 19.833 15 19 15h-1.053c-.472 0-.745-.556-.5-.96a8.95 8.95 0 00.303-.54m.023-8.25H16.48a4.5 4.5 0 01-1.423-.23l-3.114-1.04a4.5 4.5 0 00-1.423-.23H6.504c-.618 0-1.217.247-1.605.729A11.95 11.95 0 002.25 12c0 .434.023.863.068 1.285C2.427 14.306 3.346 15 4.372 15h3.126c.618 0 .991.724.725 1.282A7.471 7.471 0 007.5 19.5a2.25 2.25 0 002.25 2.25.75.75 0 00.75-.75v-.633c0-.573.11-1.14.322-1.672.304-.76.93-1.33 1.653-1.715a9.04 9.04 0 002.86-2.4c.498-.634 1.226-1.08 2.032-1.08h.384"
+                            />
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                    <div
+                      class="share pl-10 border-solid border-l-2 border-gray-400"
+                    >
+                      <button>
+                        <a
+                          href="https://www.facebook.com/sharer/sharer.php?u=example.org"
+                          target="_blank"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-7 h-7 cursor-pointer hover:fill-indigo-600"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+                            />
+                          </svg>
+                        </a>
+                      </button>
+                    </div>
+                  </div>
+                  <script>
+                    var is9 = 0;
+                    var b9 = document.querySelector(".like8");
+                    function Toggle17() {
+                      if (b9.classList.contains("fill-red-400")) {
+                        b9.classList.remove("fill-red-400");
+                        is9 = 0;
+                      } else if (is9 == 0) {
+                        b9.classList.add("fill-red-400");
+                        is9 = 1;
+                      }
+                    }
+                    var dislike9 = document.querySelector(".dislike8");
+                    function Toggle18() {
+                      if (dislike9.classList.contains("fill-blue-600")) {
+                        dislike9.classList.remove("fill-blue-600");
+                        is9 = 0;
+                      } else if (is9 == 0) {
+                        dislike9.classList.add("fill-blue-600");
+                        is9 = 1;
+                      }
+                    }
+                  </script>
+                  <!-- Ending of like share portion -->
+                </div>
+              </div>
             </div>
-            <div class="flex justify-center">
+            <div class="flex justify-center mt-4">
               <div
                 class="btn bg-secondary-100 text-secondary-200 mb-10 hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300"
               >
@@ -353,6 +1382,15 @@
         </div>
       </section>
     </main>
+    <footer
+      class="page-footer h-16 text-center bg-purple-600 text-white flex justify-center"
+    >
+      <p class="mb-0 mt-4">
+        &copy;<span id="date">2021</span>
+        <span class="footer-logo text-gray-700 font-bold">FoodFire</span>
+        Built by-<h1 class="text-gray-700 mt-4 font-bold"> Shahrear</h1>
+      </p>
+    </footer>
     <!-- Javascript -->
     <script src="index.js"></script>
   </body>
