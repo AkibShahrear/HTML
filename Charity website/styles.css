@@ -109,18 +109,22 @@ input {
 button {
   cursor: pointer;
 }
+
 :focus-visible {
   outline-offset: 4px;
 }
+
 ::selection {
   background-color: var(--white_10);
 }
+
 html {
   font-family: var(-ff-roboto);
   color: var(--granite-gray);
   font-size: 10px;
   scroll-behavior: smooth;
 }
+
 body {
   background-color: var(--white);
   font-size: 1.6rem;
@@ -249,6 +253,10 @@ body {
 .navbar,
 .header-action {
   display: none;
+}
+
+.logo {
+  color: white;
 }
 
 .header {
